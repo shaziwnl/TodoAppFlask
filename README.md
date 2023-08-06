@@ -23,7 +23,7 @@ Run the following in the project terminal:-
 
 ## Usage
 Run the following command in the project terminal:-
-  python app.py
+- python app.py
 
 
 
