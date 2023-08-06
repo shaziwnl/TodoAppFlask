@@ -3,7 +3,6 @@
 > A simple todo CRUD application in Flask using SQL (SQLite) and Bootstrap 
 
 ## Table of Contents
-* [General Info](#general-information)
 * [Setup](#setup)
 * [Usage](#usage)
 * [Technologies Used](#technologies-used)
@@ -11,10 +10,6 @@
 * [Contact](#contact)
 <!-- * [License](#license) -->
 
-## General Information
-For people who consume soft drinks, the usual coke and pepsi have become extremely boring and monotnous. This app provides a variety of options for anyone looking to drink something new, outside of the soft drink market.
-This mocktail recommender provides you with a list of mocktails that you can make with the chosen ingredients, along with instructions and images as well as missing ingredients sorted in ascending order of missing ingredients (maximum of 2 missing ingredients), saved in a doc file named **mocktail.docx** which would be saved in the directory where you have saved this project.
-**Note - For all recipes it is assumed that you have water and ice available.**
 
 ## Setup
 Run the following in the project terminal:-
