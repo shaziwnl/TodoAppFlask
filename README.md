@@ -18,8 +18,8 @@ This mocktail recommender provides you with a list of mocktails that you can mak
 
 ## Setup
 Run the following in the project terminal:-
-  pip install flask
-  pip install flask-sqlalchemy
+- pip install flask
+- pip install flask-sqlalchemy
 
 ## Usage
 Run the following command in the project terminal:-
