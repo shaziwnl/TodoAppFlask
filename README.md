@@ -28,6 +28,7 @@ Run the following command in the project terminal:-
 
 
 
+![image](https://github.com/shaziwnl/TodoAppFlask/assets/121330440/d3b5e8a6-0f1c-4df7-9d0d-18d7eeb67dcd)
 
 
 <img src="https://i.imgur.com/3jTkX3X.png" alt="checkbox" width="200"/>
