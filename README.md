@@ -13,6 +13,8 @@
 
 ## Setup
 Run the following in the project terminal:-
+- git clone
+- cd 
 - pip install flask
 - pip install flask-sqlalchemy
 
