@@ -1,4 +1,4 @@
-# 📝 Todo Web Application - Simple Todo App
+# 📝 Todo Web Application - Simple Todo CRUD App
 
 > A simple todo CRUD application in Flask using SQL (SQLite) and Bootstrap 
 
