@@ -12,14 +12,14 @@
 
 
 ## Setup
-Run the following in the project terminal:-
+Run the following commands in the terminal from the Project Directory:-
 - git clone https://github.com/shaziwnl/TodoAppFlask.git
 - cd TodoAppFlask
 - pip install flask
 - pip install flask-sqlalchemy
 
 ## Usage
-Run the following command in the project terminal:-
+Run the following command in the terminal from the Project Directory:-
 - python app.py
 
 
