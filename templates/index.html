@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./static/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Todo Application</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4" id="navbar">
+      <a href="/"><img src="./static/checklist.png" width="40"></a>
+      <a class="navbar-brand ml-2" style="color: white;">To-Do App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active ml-2">
+            <a class="fa fa-youtube-play" href="https://www.youtube.com/channel/UCmslLRXUaiwjYxRm-eqNn9w" target="_blank" style="font-size:40px;color: white"></a>
+          </li>
+          <li class="nav-item active ml-3">
+            <a class="fa fa-instagram" href="https://www.instagram.com/garang_shoel/" target="_blank" style="font-size:37px; color: white;"></a>
+          </li>
+          <li class="nav-item active ml-3">
+            <a class="fa fa-github" href="https://github.com/shaziwnl" target="_blank" style="font-size:37px;color: #fff;"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <table style="text-align: center; border: solid 2px white; border-top: solid 5px white;" class="table table-striped table-dark mb-5">
+        <thead class="thead-dark" style="border-bottom: solid 3px white;">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Actions</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for todo in allTodos %}
+          <tr style="border-top: solid 2px white;" >
+            <th scope="row" class="thead-light">{{loop.index}}</th>
+            <td>{{todo.title}}</td>
+            <td><small>{{todo.desc}}</small></td>
+            <td>
+              <a type="button" href="/update/{{todo.sno}}" style="color: white;" class="btn btn-primary mr-2">Update</button>
+              <a type="button" href="/delete/{{todo.sno}}" class="btn btn-danger mr-2">Delete</button>
+                {% if todo.status == 0 %}
+                <a type="button" class="btn btn-success" href="/change-status/{{todo.sno}}">Mark as complete</button>
+                {% else %}
+                <a type="button" class="btn btn-warning" href="/change-status/{{todo.sno}}">Mark as incomplete</button>
+                {% endif %}
+            </td>
+            {% if todo.status == 0 %}
+              <td class="bg-info"><strong>Incomplete</strong></td>
+            {% else %}
+              <td class="bg-success"><strong>Complete!</strong></td>
+            {% endif %}
+          </tr>
+          {% endfor %}
+        </tbody>
+
+      </table>
+
+      <form style="width: 50%; margin-bottom: 20px;" method="POST" action="/">
+        <div class="form-group">
+          <div class="alert alert-dark" role="alert">
+            To-Do Title
+          </div>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="title" value="Title" placeholder="Enter Title">
+        </div>
+        <div class="form-group">
+          <div class="alert alert-dark" role="alert">
+            To-Do Description
+          </div>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="desc" value="Description" placeholder="Enter Description">
+        </div>
+        <button type="submit" style="border: solid 1px white;" class="btn btn-dark">Add To-Do</button>
+      </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
