@@ -35,7 +35,7 @@ Run the following command in the terminal from the Project Directory:-
 
 ## Technologies Used
 - HTML/CSS (Bootstrap 4.3.1)
-- Python 3.1 (Flask 2.3.2)
+- Python 3.10.5 (Flask 2.3.2)
 - SQL (SQLite)
 
 ## Project Status
