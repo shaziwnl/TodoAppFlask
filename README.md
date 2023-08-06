@@ -21,11 +21,11 @@ Run the following command in the project terminal:-
 - python app.py
 
 
-Index File
+# Index File
 ![image](https://github.com/shaziwnl/TodoAppFlask/assets/121330440/d3b5e8a6-0f1c-4df7-9d0d-18d7eeb67dcd)
 
 
-Create Todo
+# Create Todo
 ![image](https://github.com/shaziwnl/TodoAppFlask/assets/121330440/728c4cdf-8046-4057-a876-636c808916a3)
 
 
