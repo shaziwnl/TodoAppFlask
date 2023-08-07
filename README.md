@@ -12,7 +12,7 @@
 
 
 ## Setup
-Run the following commands in the terminal from the Project Directory:-
+Run the following commands in the terminal:-
 - git clone https://github.com/shaziwnl/TodoAppFlask.git
 - cd TodoAppFlask
 - pip install flask
